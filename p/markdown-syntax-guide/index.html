@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://yiguanwuya.github.io/p/markdown-syntax-guide/'>
 
-<link rel="stylesheet" href="/scss/style.min.0304c6baf04e01a8fe70693791cb744d56a3578a3120a8796cefc66825aa39c7.css"><meta property='og:title' content="Markdown Syntax Guide">
+<link rel="stylesheet" href="/scss/style.min.d0a16b8285afbefdc07c79fbf6282161f02e29094d9cc49a298d4e2016d2afc7.css"><meta property='og:title' content="Markdown Syntax Guide">
 <meta property='og:description' content="Sample article showcasing basic Markdown syntax and formatting for HTML elements.">
 <meta property='og:url' content='https://yiguanwuya.github.io/p/markdown-syntax-guide/'>
 <meta property='og:site_name' content='一罐乌鸦-yaya'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='themes' /><meta property='article:published_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='og:image' content='https://yiguanwuya.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='markdown' /><meta property='article:tag' content='css' /><meta property='article:tag' content='html' /><meta property='article:tag' content='themes' /><meta property='article:published_time' content='2019-03-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-10-13T13:48:05&#43;08:00'/><meta property='og:image' content='https://yiguanwuya.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
 <meta name="twitter:title" content="Markdown Syntax Guide">
 <meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://yiguanwuya.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg' />
@@ -650,7 +650,19 @@
     </section>
 
 
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Oct 13, 2024 13:48 &#43;0800
+        </span>
+    </section></footer>
 
 
     
@@ -684,9 +696,8 @@
 
     
 
-     
+
     
-        
     <script src="https://utteranc.es/client.js" 
         repo=""
         issue-term="pathname"
@@ -733,7 +744,166 @@
 </script>
 
 
+<head>
     
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
+    
+  </head>
+  <body>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+      
+      
+      
+    
+
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://waline.mostima.blog',
+        lang: 'zh-CN',
+        emoji: [
+        '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        '//unpkg.com/@waline/emojis@1.2.0/tieba',
+        '//unpkg.com/@waline/emojis@1.2.0/qq',
+        '//unpkg.com/@waline/emojis@1.2.0/alus',
+        '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+        ],
+        dark: 'html[class="scroll-smooth dark"]',
+
+      });
+    </script>
+
+
+    <style>
+       
+      :root {
+         
+        --waline-font-size: 16px;
+
+         
+        --waline-white: #ffff;
+         
+        --waline-light-grey: #999;
+         
+        --waline-dark-grey: #666;
+
+         
+        --waline-theme-color: #3b82f6;
+         
+        --waline-active-color: #2ecc71;
+
+         
+        --waline-color: #222;
+         
+        --waline-bgcolor: #fff;
+         
+        --waline-bgcolor-light: #f8f8f8;
+         
+        --waline-bgcolor-hover: #2ecc71;
+         
+        --waline-border-color: #ddd;
+         
+        --waline-disable-bgcolor: rgba(248, 248, 248, 0.4);
+         
+        --waline-disable-color:#bbb;
+         
+        --waline-code-bgcolor: #282c34;
+
+         
+        --waline-bq-color: #f0f0f0;
+
+         
+        --waline-avatar-size: 3.25rem;
+         
+        --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+
+         
+        --waline-badge-color: #3b82f6;
+         
+        --waline-badge-font-size: 12px;
+
+         
+        --waline-info-border: 1px solid #999;
+         
+        --waline-info-color: #999;
+         
+        --waline-info-font-size: 16px;
+           
+        --waline-info-bgcolor: rgba(235, 235, 235, 0.4);
+
+         
+        --waline-border: 1px solid var(--waline-border-color);
+         
+        --waline-avatar-radius: 50%;
+         
+        --waline-box-shadow: none;
+      }
+
+       
+      html[class="scroll-smooth dark"]{
+         
+        --waline-white: #000;
+          
+        --waline-light-grey: #999;
+         
+          
+        --waline-dark-grey: #999;
+
+         
+        --waline-color: #c2c2c2;
+          
+        --waline-bgcolor: #1E293B;
+          
+        --waline-bgcolor-light: #2A354F;
+          
+        --waline-border-color: #666;
+          
+        --waline-disable-bgcolor: rgba(68, 68, 68, 0.8);
+          
+        --waline-disable-color: #888;
+
+         
+        --waline-bq-color: #1F2D4B;
+
+         
+        --waline-info-bgcolor: rgba(31, 45, 75, 0.8);
+          
+        --waline-info-color: #888;
+         
+        --waline-info-border: 1px solid #d3d3d3;
+      }
+
+    </style>
+
+
+  </body>
+
+
+
+
+
+
+
 
     <footer class="site-footer">
     <section class="copyright">
@@ -747,6 +917,21 @@
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>
 </footer>
+<script>
+    (function(u, c) {
+      var d = document, t = 'script', o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function(e) { c(e); }); }
+      s.parentNode.insertBefore(o, s);
+    })('//cdn.bootcss.com/pangu/4.0.7/pangu.min.js', function() {
+      pangu.spacingPage();
+    });
+</script>
+
+
+
+
 
 
     
@@ -829,6 +1014,7 @@
 
             </main>
         </div>
+
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
                 
@@ -845,6 +1031,28 @@
         document.head.appendChild(customFont);
     }());
 </script>
+<style>
+  body {
+    background: url(https://yiguanwuya.github.io/background/%E8%83%8C%E6%99%AF.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<script src=https://yiguanwuya.github.io/background/sakura.js></script>
+
+<style>
+  @font-face {
+    font-family: '千图雪花体';
+    src: url(https://yiguanwuya.github.io/font/%E5%8D%83%E5%9B%BE%E9%9B%AA%E8%8A%B1%E4%BD%93.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '千图雪花体';
+    --code-font-family: '千图雪花体';
+  }
+</style>
+
+
 
     </body>
 </html>
