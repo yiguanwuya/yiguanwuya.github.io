@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="城际通勤对双城系统中出行特征和城市性能的影响">
+<title>Impacts of intercity commuting on travel characteristics and urban performances in a two-city system</title>
+
+<link rel='canonical' href='https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/'>
+
+<link rel="stylesheet" href="/scss/style.min.d0a16b8285afbefdc07c79fbf6282161f02e29094d9cc49a298d4e2016d2afc7.css"><meta property='og:title' content="Impacts of intercity commuting on travel characteristics and urban performances in a two-city system">
+<meta property='og:description' content="城际通勤对双城系统中出行特征和城市性能的影响">
+<meta property='og:url' content='https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/'>
+<meta property='og:site_name' content='一罐乌鸦-yaya'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2024-10-20T09:48:33&#43;08:00'/><meta property='article:modified_time' content='2024-10-20T03:49:44&#43;00:00'/><meta property='og:image' content='https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic.png' />
+<meta name="twitter:title" content="Impacts of intercity commuting on travel characteristics and urban performances in a two-city system">
+<meta name="twitter:description" content="城际通勤对双城系统中出行特征和城市性能的影响"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic.png' />
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu5840062421697287686.jpg" width="300"
+                            height="299" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🐦‍⬛</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">一罐乌鸦-yaya</a></h1>
+            <h2 class="site-description">灯火万盏我只听到一个人的心愿</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/CaiJimmy/hugo-theme-stack'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://x.com/yiguanwuya'
+                        target="_blank"
+                        title="Twitter"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友情链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#引言">引言</a>
+      <ol>
+        <li><a href="#多模式">多模式</a></li>
+        <li><a href="#城市异质性">城市异质性</a></li>
+      </ol>
+    </li>
+    <li><a href="#框架">框架</a>
+      <ol>
+        <li><a href="#城市结构">城市结构</a></li>
+        <li><a href="#基本假设">基本假设</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/">
+                <img src="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic_hu12380135860702819567.png"
+                        srcset="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic_hu12380135860702819567.png 800w, /p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic_hu18334221555696615281.png 1600w"
+                        width="800" 
+                        height="417" 
+                        loading="lazy"
+                        alt="Featured image of post Impacts of intercity commuting on travel characteristics and urban performances in a two-city system" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BB%84%E4%BC%9A%E8%AE%BA%E6%96%87/" >
+                组会论文
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/">Impacts of intercity commuting on travel characteristics and urban performances in a two-city system</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            城际通勤对双城系统中出行特征和城市性能的影响
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-10-20</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>文章链接：<a class="link" href="https://www.sciencedirect.com/science/article/abs/pii/S1366554522001818"  target="_blank" rel="noopener"
+    >Impacts of intercity commuting on travel characteristics and urban performances in a two-city system - ScienceDirect</a></p>
+<h1 id="摘要">摘要
+</h1><p>This paper investigates the effects of intercity commuting on travel characteristics and urban performances. A spatial equilibrium model of the two-city system which involves the <strong>（<strong>①</strong>travel mode choice and workplace selection equilibrium）, as well as the</strong>( <strong>②</strong>housing demand and supply equilibrium), is proposed and well formulated. A two-level iterative procedure is presented, and the properties of the proposed model are analytically and numerically analyzed. 【The finding shows that, the improvement of intercity commuting always ①improves the households’ utility level. ②From the respects of spatial structure and intercity commuters, both two cities become more compact, the number of households residing in the less economically developed city and intercity commuters both increase with the improvement of intercity commuting condition when incomes are exogenous. ③When agglomeration effects are considered, the city boundaries and the population of developed city and the left boundary of less developed city increase firstly and then decrease, and the right boundary of less developed city keeps decreasing with the improvement of intercity train. 】</p>
+<p>本文研究了<strong>城际通勤</strong>对<strong>出行特征</strong>和<strong>城市性能</strong>的影响。本文提出了一个双城系统的空间均衡模型，该模型涉及<strong>出行方式选择和工作场所选择均衡</strong>，以及<strong>住房需求和供给均衡</strong>。提出了一个两级迭代程序，并对所提模型的特性进行了分析和数值计算。研究结果表明，城际通勤的改善总是能提高家庭的效用水平。从空间结构和城际通勤者的角度来看，当收入为外生因素时，两个城市都变得更加紧凑，居住在经济欠发达城市的家庭数量和城际通勤者数量都会随着城际通勤条件的改善而增加。当考虑人口集聚效应（城市的经济会随着人口的增加而提升从而带动可持续收入的增加）时，发达城市和欠发达城市左边界的城市边界和人口数量先增加后减少，欠发达城市右边界的城市边界和人口数量随着城际列车的改善而不断减少。</p>
+<h1 id="引言和假设">引言和假设
+</h1><h2 id="引言">引言
+</h2><p>城际交通促进了区域经济的协调和发展，在近几十年进入了建设的高峰期。一方面，城际通勤的改善增强了各区域的可达性，直接影响了通勤者的出行行为及工作地点的选择。另一方面，城际通勤已成为居民和产业迁移的主要驱动力之一，进而引发城市空间结构（城市布局、城市边界等）的变化。</p>
+<p>为了实现可持续的城市发展，探讨城际通勤对出行特征和城市性能（如城市规模、居住分布、房租等）的影响是至关重要的。</p>
+<p>提出了一个简化的分析空间均衡模型，适用于<strong>两城市、多模式</strong>交通情况，描述了居住位置、工作地点和出行方式选择行为之间的相互作用，用于研究城际通勤对出行特征（如模式边界、模式份额）和城市绩效（如人口分布、城市规模、住房租金、住房消费和家庭效用）的影响。</p>
+<h3 id="多模式">多模式
+</h3><p>这里所说的多模式是指采用多种交通方式，并且很多跨城市出行是多种交通方式的组合，比如可能乘坐公共交通或者驾车去高铁站，然后乘坐高铁去工作地点，因此城市间出行方式的选择不仅依赖于市外交通的质量还依赖于城市内交通的质量。</p>
+<img src="图片2.png" alt="图片2" style="zoom: 25%;" />
+<h3 id="城市异质性">城市异质性
+</h3><p>这里认为两个城市之间存在异质性因此人们才会考虑跨城市通勤</p>
+<p>异质性体现在两个方面：</p>
+<p>①工资水平</p>
+<p>②城市基础设施建设水平</p>
+<h2 id="框架">框架
+</h2><h3 id="城市结构">城市结构
+</h3><p><img src="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE.png"
+	width="1121"
+	height="343"
+	srcset="/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE_hu6938882965156703645.png 480w, /p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE_hu628275058823364949.png 1024w"
+	loading="lazy"
+	
+		alt="双城系统模型图"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="326"
+		data-flex-basis="784px"
+	
+>
+$$
+论文研究两个线性单中心城市组成的封闭经济体，标记为城市1和城市2。
+城市i的CBD设置为城市中心的一个点：X_i^s=0
+$$</p>
+<p>$$
+\overline{X_{i}^{s}} = 0:s∈{+，-}，i∈{1,2}城市边界与CBD的距离，s为-时为左边界，s为+为右边界
+$$</p>
+<p>$$
+X_{i}^{s}:s∈{+，-}，i∈{1,2}某地到i城CBD的距离
+$$</p>
+<p>$$
+假设：两个城市边界不重叠，因此D&gt;x_1^++x_-^2
+$$</p>
+<h3 id="基本假设">基本假设
+</h3><p><strong>A1经济体特征：</strong></p>
+<p>①经济体是封闭的，人口总数是外生且固定的，家庭可在两个城市之间迁移，因此每个城市中的家庭人口数量是内生的。</p>
+<p>②城市1经济发达，基本收入高于城市2。</p>
+<p>③所有土地均为缺席地主所有，城市边界内的土地价值不低于农业租金，而城市边界及以外的土地价值等于农业租金。</p>
+<p><strong>A2城市内部交通：</strong></p>
+<p>①出行成本随旅行距离线性增加驾车固定成本高但变动成本低于公共交通</p>
+<p>②在城市边界，驾车始终比乘坐公共交通便宜</p>
+<p>③一个家庭有且仅有一个通勤者</p>
+<p><strong>A3住房市场供应：</strong></p>
+<p>房地产开发商目标是最大化每单位土地面积的住房投资利润。采用Cobb-Douglas住房生产函数。</p>
+<p><strong>A4住房市场需求</strong>：</p>
+<p>①所有家庭理性且同质，收入由工作地点决定</p>
+<p>②可支配收入用于住房消费和非住房商品消费，目标是最大化效用。</p>
+<p>**A5城市设施水平：**经济水平高的城市设施水平高，每座城市的城市设施水平随着与CBD的距离增加而降低，在城市左右两边对称，并直接影响家庭效用</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Oct 20, 2024 03:49 UTC
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+
+    
+    <script src="https://utteranc.es/client.js" 
+        repo=""
+        issue-term="pathname"
+        
+        crossorigin="anonymous"
+        async
+        >
+</script>
+
+<style>
+    .utterances {
+        max-width: unset;
+    }
+</style>
+
+<script>
+    let utterancesLoaded = false;
+
+    function setUtterancesTheme(theme) {
+        let utterances = document.querySelector('.utterances iframe');
+        if (utterances) {
+            utterances.contentWindow.postMessage(
+                {
+                    type: 'set-theme',
+                    theme: `github-${theme}`
+                },
+                'https://utteranc.es'
+            );
+        }
+    }
+
+    addEventListener('message', event => {
+        if (event.origin !== 'https://utteranc.es') return;
+
+        
+        utterancesLoaded = true;
+        setUtterancesTheme(document.documentElement.dataset.scheme)
+    });
+
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (!utterancesLoaded) return;
+        setUtterancesTheme(e.detail)
+    })
+</script>
+
+
+<head>
+    
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@waline/client@v2/dist/waline.css"
+    />
+    
+  </head>
+  <body>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+      
+      
+      
+    
+
+    <div id="waline"></div>
+    <script type="module">
+      import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+      init({
+        el: '#waline',
+        serverURL: 'https://waline.mostima.blog',
+        lang: 'zh-CN',
+        emoji: [
+        '//unpkg.com/@waline/emojis@1.2.0/bmoji',
+        '//unpkg.com/@waline/emojis@1.2.0/tieba',
+        '//unpkg.com/@waline/emojis@1.2.0/qq',
+        '//unpkg.com/@waline/emojis@1.2.0/alus',
+        '//unpkg.com/@waline/emojis@1.1.0/bilibili',
+        'https://cdn.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs',
+        ],
+        dark: 'html[class="scroll-smooth dark"]',
+
+      });
+    </script>
+
+
+    <style>
+       
+      :root {
+         
+        --waline-font-size: 16px;
+
+         
+        --waline-white: #ffff;
+         
+        --waline-light-grey: #999;
+         
+        --waline-dark-grey: #666;
+
+         
+        --waline-theme-color: #3b82f6;
+         
+        --waline-active-color: #2ecc71;
+
+         
+        --waline-color: #222;
+         
+        --waline-bgcolor: #fff;
+         
+        --waline-bgcolor-light: #f8f8f8;
+         
+        --waline-bgcolor-hover: #2ecc71;
+         
+        --waline-border-color: #ddd;
+         
+        --waline-disable-bgcolor: rgba(248, 248, 248, 0.4);
+         
+        --waline-disable-color:#bbb;
+         
+        --waline-code-bgcolor: #282c34;
+
+         
+        --waline-bq-color: #f0f0f0;
+
+         
+        --waline-avatar-size: 3.25rem;
+         
+        --waline-m-avatar-size: calc(var(--waline-avatar-size) * 9 / 13);
+
+         
+        --waline-badge-color: #3b82f6;
+         
+        --waline-badge-font-size: 12px;
+
+         
+        --waline-info-border: 1px solid #999;
+         
+        --waline-info-color: #999;
+         
+        --waline-info-font-size: 16px;
+           
+        --waline-info-bgcolor: rgba(235, 235, 235, 0.4);
+
+         
+        --waline-border: 1px solid var(--waline-border-color);
+         
+        --waline-avatar-radius: 50%;
+         
+        --waline-box-shadow: none;
+      }
+
+       
+      html[class="scroll-smooth dark"]{
+         
+        --waline-white: #000;
+          
+        --waline-light-grey: #999;
+         
+          
+        --waline-dark-grey: #999;
+
+         
+        --waline-color: #c2c2c2;
+          
+        --waline-bgcolor: #1E293B;
+          
+        --waline-bgcolor-light: #2A354F;
+          
+        --waline-border-color: #666;
+          
+        --waline-disable-bgcolor: rgba(68, 68, 68, 0.8);
+          
+        --waline-disable-color: #888;
+
+         
+        --waline-bq-color: #1F2D4B;
+
+         
+        --waline-info-bgcolor: rgba(31, 45, 75, 0.8);
+          
+        --waline-info-color: #888;
+         
+        --waline-info-border: 1px solid #d3d3d3;
+      }
+
+    </style>
+
+
+  </body>
+
+
+
+
+
+
+
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2024 一罐乌鸦-yaya
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+<script>
+    (function(u, c) {
+      var d = document, t = 'script', o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function(e) { c(e); }); }
+      s.parentNode.insertBefore(o, s);
+    })('//cdn.bootcss.com/pangu/4.0.7/pangu.min.js', function() {
+      pangu.spacingPage();
+    });
+</script>
+
+
+
+
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<style>
+  body {
+    background: url(https://yiguanwuya.github.io/background/%E8%83%8C%E6%99%AF.jpg) no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+</style>
+<script src=https://yiguanwuya.github.io/background/sakura.js></script>
+
+<style>
+  @font-face {
+    font-family: '千图雪花体';
+    src: url(https://yiguanwuya.github.io/font/%E5%8D%83%E5%9B%BE%E9%9B%AA%E8%8A%B1%E4%BD%93.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '千图雪花体';
+    --code-font-family: '千图雪花体';
+  }
+</style>
+
+
+
+    </body>
+</html>

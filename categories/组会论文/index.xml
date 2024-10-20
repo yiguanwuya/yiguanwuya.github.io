@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>组会论文 on 一罐乌鸦-yaya</title>
+        <link>https://yiguanwuya.github.io/categories/%E7%BB%84%E4%BC%9A%E8%AE%BA%E6%96%87/</link>
+        <description>Recent content in 组会论文 on 一罐乌鸦-yaya</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>一罐乌鸦-yaya</copyright>
+        <lastBuildDate>Sun, 20 Oct 2024 09:48:33 +0800</lastBuildDate><atom:link href="https://yiguanwuya.github.io/categories/%E7%BB%84%E4%BC%9A%E8%AE%BA%E6%96%87/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Impacts of intercity commuting on travel characteristics and urban performances in a two-city system</title>
+        <link>https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/</link>
+        <pubDate>Sun, 20 Oct 2024 09:48:33 +0800</pubDate>
+        
+        <guid>https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/</guid>
+        <description>&lt;img src="https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/titlepic.png" alt="Featured image of post Impacts of intercity commuting on travel characteristics and urban performances in a two-city system" /&gt;&lt;p&gt;文章链接：&lt;a class=&#34;link&#34; href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S1366554522001818&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Impacts of intercity commuting on travel characteristics and urban performances in a two-city system - ScienceDirect&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;摘要&#34;&gt;摘要
+&lt;/h1&gt;&lt;p&gt;This paper investigates the effects of intercity commuting on travel characteristics and urban performances. A spatial equilibrium model of the two-city system which involves the &lt;strong&gt;（&lt;strong&gt;①&lt;/strong&gt;travel mode choice and workplace selection equilibrium）, as well as the&lt;/strong&gt;( &lt;strong&gt;②&lt;/strong&gt;housing demand and supply equilibrium), is proposed and well formulated. A two-level iterative procedure is presented, and the properties of the proposed model are analytically and numerically analyzed. 【The finding shows that, the improvement of intercity commuting always ①improves the households’ utility level. ②From the respects of spatial structure and intercity commuters, both two cities become more compact, the number of households residing in the less economically developed city and intercity commuters both increase with the improvement of intercity commuting condition when incomes are exogenous. ③When agglomeration effects are considered, the city boundaries and the population of developed city and the left boundary of less developed city increase firstly and then decrease, and the right boundary of less developed city keeps decreasing with the improvement of intercity train. 】&lt;/p&gt;
+&lt;p&gt;本文研究了&lt;strong&gt;城际通勤&lt;/strong&gt;对&lt;strong&gt;出行特征&lt;/strong&gt;和&lt;strong&gt;城市性能&lt;/strong&gt;的影响。本文提出了一个双城系统的空间均衡模型，该模型涉及&lt;strong&gt;出行方式选择和工作场所选择均衡&lt;/strong&gt;，以及&lt;strong&gt;住房需求和供给均衡&lt;/strong&gt;。提出了一个两级迭代程序，并对所提模型的特性进行了分析和数值计算。研究结果表明，城际通勤的改善总是能提高家庭的效用水平。从空间结构和城际通勤者的角度来看，当收入为外生因素时，两个城市都变得更加紧凑，居住在经济欠发达城市的家庭数量和城际通勤者数量都会随着城际通勤条件的改善而增加。当考虑人口集聚效应（城市的经济会随着人口的增加而提升从而带动可持续收入的增加）时，发达城市和欠发达城市左边界的城市边界和人口数量先增加后减少，欠发达城市右边界的城市边界和人口数量随着城际列车的改善而不断减少。&lt;/p&gt;
+&lt;h1 id=&#34;引言和假设&#34;&gt;引言和假设
+&lt;/h1&gt;&lt;h2 id=&#34;引言&#34;&gt;引言
+&lt;/h2&gt;&lt;p&gt;城际交通促进了区域经济的协调和发展，在近几十年进入了建设的高峰期。一方面，城际通勤的改善增强了各区域的可达性，直接影响了通勤者的出行行为及工作地点的选择。另一方面，城际通勤已成为居民和产业迁移的主要驱动力之一，进而引发城市空间结构（城市布局、城市边界等）的变化。&lt;/p&gt;
+&lt;p&gt;为了实现可持续的城市发展，探讨城际通勤对出行特征和城市性能（如城市规模、居住分布、房租等）的影响是至关重要的。&lt;/p&gt;
+&lt;p&gt;提出了一个简化的分析空间均衡模型，适用于&lt;strong&gt;两城市、多模式&lt;/strong&gt;交通情况，描述了居住位置、工作地点和出行方式选择行为之间的相互作用，用于研究城际通勤对出行特征（如模式边界、模式份额）和城市绩效（如人口分布、城市规模、住房租金、住房消费和家庭效用）的影响。&lt;/p&gt;
+&lt;h3 id=&#34;多模式&#34;&gt;多模式
+&lt;/h3&gt;&lt;p&gt;这里所说的多模式是指采用多种交通方式，并且很多跨城市出行是多种交通方式的组合，比如可能乘坐公共交通或者驾车去高铁站，然后乘坐高铁去工作地点，因此城市间出行方式的选择不仅依赖于市外交通的质量还依赖于城市内交通的质量。&lt;/p&gt;
+&lt;img src=&#34;图片2.png&#34; alt=&#34;图片2&#34; style=&#34;zoom: 25%;&#34; /&gt;
+&lt;h3 id=&#34;城市异质性&#34;&gt;城市异质性
+&lt;/h3&gt;&lt;p&gt;这里认为两个城市之间存在异质性因此人们才会考虑跨城市通勤&lt;/p&gt;
+&lt;p&gt;异质性体现在两个方面：&lt;/p&gt;
+&lt;p&gt;①工资水平&lt;/p&gt;
+&lt;p&gt;②城市基础设施建设水平&lt;/p&gt;
+&lt;h2 id=&#34;框架&#34;&gt;框架
+&lt;/h2&gt;&lt;h3 id=&#34;城市结构&#34;&gt;城市结构
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE.png&#34;
+	width=&#34;1121&#34;
+	height=&#34;343&#34;
+	srcset=&#34;https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE_hu6938882965156703645.png 480w, https://yiguanwuya.github.io/p/impacts-of-intercity-commuting-on-travel-characteristics-and-urban-performances-in-a-two-city-system/%E5%8F%8C%E5%9F%8E%E7%B3%BB%E7%BB%9F%E6%A8%A1%E5%9E%8B%E5%9B%BE_hu628275058823364949.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;双城系统模型图&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;326&#34;
+		data-flex-basis=&#34;784px&#34;
+	
+&gt;
+$$
+论文研究两个线性单中心城市组成的封闭经济体，标记为城市1和城市2。
+城市i的CBD设置为城市中心的一个点：X_i^s=0
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\overline{X_{i}^{s}} = 0:s∈{+，-}，i∈{1,2}城市边界与CBD的距离，s为-时为左边界，s为+为右边界
+$$&lt;/p&gt;
+&lt;p&gt;$$
+X_{i}^{s}:s∈{+，-}，i∈{1,2}某地到i城CBD的距离
+$$&lt;/p&gt;
+&lt;p&gt;$$
+假设：两个城市边界不重叠，因此D&amp;gt;x_1^++x_-^2
+$$&lt;/p&gt;
+&lt;h3 id=&#34;基本假设&#34;&gt;基本假设
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;A1经济体特征：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;①经济体是封闭的，人口总数是外生且固定的，家庭可在两个城市之间迁移，因此每个城市中的家庭人口数量是内生的。&lt;/p&gt;
+&lt;p&gt;②城市1经济发达，基本收入高于城市2。&lt;/p&gt;
+&lt;p&gt;③所有土地均为缺席地主所有，城市边界内的土地价值不低于农业租金，而城市边界及以外的土地价值等于农业租金。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A2城市内部交通：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;①出行成本随旅行距离线性增加驾车固定成本高但变动成本低于公共交通&lt;/p&gt;
+&lt;p&gt;②在城市边界，驾车始终比乘坐公共交通便宜&lt;/p&gt;
+&lt;p&gt;③一个家庭有且仅有一个通勤者&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A3住房市场供应：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;房地产开发商目标是最大化每单位土地面积的住房投资利润。采用Cobb-Douglas住房生产函数。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A4住房市场需求&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;①所有家庭理性且同质，收入由工作地点决定&lt;/p&gt;
+&lt;p&gt;②可支配收入用于住房消费和非住房商品消费，目标是最大化效用。&lt;/p&gt;
+&lt;p&gt;**A5城市设施水平：**经济水平高的城市设施水平高，每座城市的城市设施水平随着与CBD的距离增加而降低，在城市左右两边对称，并直接影响家庭效用&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
